@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="film">
+<head>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/mystyle.css">
+
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/jquery_functions.js"></script>
+	<title>Movies</title>
+</head>
+<body ng-controller="HomeViewController">
+	<nav class="navPersonalize">
+		<div class="container">
+				<a href="#/" class="brand-logo"><img class="imgSmall" src="img/logo.jpg" alt=""></a>
+				
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						
+						<li><a href="sass.html">CONTACTA</a></li>
+						<li><a href="#">IDENTIFÍCATE</a></li>
+						<li class= "hazte-cliente">CONTRATA</li>
+						
+
+					</ul>
+				</div>
+			</nav>
+	
+	<div class="row">
+		<div class="col s12">
+			<ul class="">
+				<li class="tab col s3"><a href="#category/filter/All">All</a></li>
+				<li class="tab col s3"><a href="#category/filter/Action">Accion</a></li>
+				<li class="tab col s3"><a href="#category/filter/Drama">Drama</a></li>
+				<li class="tab col s3"><a href="#category/filter/Terror">Terror</a></li>
+			</ul>
+		</div>
+	<!-- 	<div id="test1" class="col s12">Test 1</div>
+		<div id="test2" class="col s12">Test 2</div>
+		<div id="test3" class="col s12">Test 3</div>
+		<div id="test4" class="col s12">Test 4</div> -->
+	</div>
+
+	<div id ="cont" ng-view>
+		
+	</div>
+
+
+
+	<footer class="page-footer styleFooter">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Titulo</h5>
+					<p class="grey-text text-lighten-4"></p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">GitHub</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2016 Copyright 
+
+			</div>
+		</div>
+	</footer>
+
+	
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
