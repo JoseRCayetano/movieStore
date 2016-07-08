@@ -1,12 +1,13 @@
 <section id ="movie" ng-controller="movies">
 	
-		<article class="movie-box" ng-repeat="movie in movies | filter:{id: id}:true" class="movie">
-			<div>
-				<img ng-src="{{movie.image}}" alt="{{movie.image}} " />
+		<article class="container row" ng-repeat="movie in movies | filter:{id: id}:true" class="movie">
+			<div class="col s6"> 
+				<img ng-src="{{movie.image}}" alt="{{movie.image}} "/>
 			</div>
-			<div class="rigth">
-				<h2>{{movie.name}}</h2>
-				<p>{{movie.description}}
+			<div class="col s4">
+				<h4>{{movie.name}}</h4>
+
+				<p>{{movie.description}}</p>
 			</div>
 			
 		</article>

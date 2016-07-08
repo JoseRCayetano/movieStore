@@ -33,7 +33,7 @@ nav .nav-wrapper form, nav .nav-wrapper form .input-field{
   background-color: black;
 }
 .hazte-cliente{
-  background-color: #79B800;
+  background-color: #4CAF50;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -53,20 +53,24 @@ nav .nav-wrapper form, nav .nav-wrapper form .input-field{
   margin: 15px;
 }
 .center{
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
-#movie {
-  margin: 0 auto;
+.blue{
+  background-color: #6e75a7 !important;
+  
 }
-#movie article {
-  width:100%;
-}
-#movie div{
-    display: inline-block;
-    width: 49%;
-    vertical-align: top;
-}
+
 #movie img{
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+
+}
+
+#movie p{
+  text-align: justify;
+
+}
+
+.categoryMenu{
+  margin-left: 40%;
 }
