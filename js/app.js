@@ -1,4 +1,4 @@
-var app = angular.module('film',['ngRoute']);//en el array inyectamos dependencias
+var app = angular.module('film',['ngRoute','ngMessages']);//en el array inyectamos dependencias
 
 app.config(['$routeProvider',function($routeProvider) {
 	$routeProvider
@@ -32,7 +32,9 @@ app.controller ("MovieViewController",['$scope',"$http",'$routeParams',function(
     });
 
 }]);
-
+app.controller ("formController",['$scope',function ($scope){
+	
+}]);
 app.controller ("ContactViewController",['$scope',function ($scope){
 	
 }]);
